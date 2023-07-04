@@ -23,7 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
+Cypress.Commands.add('clickAndOpenLink_InSameTab', (selector) => {
+    cy.get(selector).invoke("removeAttr", "target").click();
+})
 // import 'cypress-file-upload';
 
 // require('cypress-downloadfile/lib/downloadFileCommand')
