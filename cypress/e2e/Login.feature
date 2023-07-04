@@ -9,6 +9,7 @@ Feature: webdriveruniversity - Login Page
         And I click on the login button
         Then I should be presented with an alert box which contains text '<expectedAlertText>'
 
+
         Examples:
             | username  | password     | expectedAlertText    |
             | webdriver | webdriver123 | validation succeeded |
