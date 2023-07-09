@@ -16,9 +16,9 @@ Given(`I navigate to the webdriveruniversity homepage`, () => {
   // cy.visit(url);
   // basePage.navigate("");
   // homepage.navigate("");
-  // cy.wait(5000);
-
-  loginPage.navigateTo_Login_Page();
+  cy.wait(5000);
+  
+  homepage.navigate("");
 });
 
 When(`I click on the contact us button`, () => {
